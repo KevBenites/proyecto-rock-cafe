@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/output.css" />
+    <title>Proyecto - Kevin Benites</title>
+  </head>
+  <body class="max-w-dvw min-h-dvh">
+    <div id="carrito"></div>
+    <header id="header"></header>
+    <main class="min-h-dvh">
+      <!-- Hero -->
+      <section
+        class="relative bg-[url(/assets/hero-coffee.jpg)] min-h-200 bg-cover"
+      >
+        <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+        <div
+          class="relative w-[50%] mx-auto flex flex-col gap-4 justify-center items-center py-70 text-white z-1"
+        >
+          <h3
+            class="text-sm tracking-[4px] text-center uppercase animate-fadeUp"
+          >
+            Cafeteria de Especialidad
+          </h3>
+          <h1
+            class="text-7xl font-medium text-center font-grotesque animate-fadeUp [--duration:2s]"
+          >
+            Rock Café
+          </h1>
+          <p class="text-xl text-center animate-fadeUp [--duration:3s] mb-3">
+            Descubre el mundo del café de especialidad. Granos seleccionados,
+            tostados con precisión, entregados en tu puerta.
+          </p>
+          <a
+            class="bg-amber-400 rounded-4xl px-6 py-3 uppercase text-sm text-black font-semibold animate-fadeUp [--duration:4s] cursor-pointer transition-all duration-500 transform hover:text-white hover:-translate-y-2 hover:bg-amber-800 hover:scale-110"
+            href="#productos-section"
+          >
+            Ver Productos
+          </a>
+        </div>
+      </section>
+      <!-- Nuestra Historia -->
+      <section class="w-[90%] mx-auto py-20">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div class="flex-1">
+            <h2 class="sub-heading mb-3">Nuestra Historia</h2>
+            <p class="font-grotesque font-normal">
+              Nuestra historia nace de la fusión entre dos pasiones: el café de
+              especialidad y la energía del rock. Inspirados en los paisajes del
+              Perú y en la autenticidad de la música que rompe esquemas, creamos
+              un espacio donde cada taza tiene carácter, intensidad y
+              personalidad. Más que una cafetería, somos un punto de encuentro
+              para quienes disfrutan lo auténtico, lo artesanal y los momentos
+              que se viven sin prisa, pero con actitud.
+            </p>
+          </div>
+          <img
+            class="flex-1 object-cover h-90 rounded-4xl"
+            src="/assets/Nuestra-Historia.png"
+            alt="Foto de la Historia de Cafe Rock"
+          />
+        </div>
+      </section>
+      <!-- Seccion Productos -->
+      <section id="productos-section" class="py-20">
+        <div class="w-[60%] mx-auto flex flex-col items-center gap-1.5 mb-12">
+          <h2 class="sub-heading">Productos Destacados</h2>
+          <p class="paragraph-heading">
+            Café, equipamiento y merchandising seleccionado
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 mb-14">
+          <button
+            id="btn-todos"
+            class="bg-[#9a5326] text-white text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white"
+          >
+            Todos
+          </button>
+          <button
+            id="btn-cafes"
+            class="bg-[#EEEBE8] text-[#8c7373] text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white"
+          >
+            Cafés
+          </button>
+          <button
+            id="btn-merchandising"
+            class="bg-[#EEEBE8] text-[#8c7373] text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white"
+          >
+            Merchandising
+          </button>
+          <button
+            id="btn-accesorios"
+            class="bg-[#EEEBE8] text-[#8c7373] text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white"
+          >
+            Accesorios
+          </button>
+        </div>
+        <!-- Grilla Productos -->
+        <div
+          id="productos-container"
+          class="w-[90%] mx-auto grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 gap-x-10 gap-y-10"
+        ></div>
+      </section>
+      <!-- Seccion Cursos -->
+      <section id="cursos-section" class="py-20">
+        <div class="w-[60%] mx-auto flex flex-col items-center gap-1.5 mb-12">
+          <h2 class="sub-heading">Cursos y Talleres</h2>
+          <p class="paragraph-heading">
+            Aprende de la mano de baristas profesionales
+          </p>
+        </div>
+        <!-- Grilla Cursos -->
+        <div
+          class="w-[90%] mx-auto grid grid-cols-1 grid-rows-3 xl:grid-cols-3 xl:grid-rows-1 gap-x-10 gap-y-10"
+        >
+          <!-- INTRO CAFE -->
+          <div
+            class="flex flex-col border border-gray-300/50 overflow-hidden rounded-2xl gap-2"
+          >
+            <div class="group card-container">
+              <div class="card-image">
+                <span className="font-display text-7xl">☕</span>
+              </div>
+              <div class="card-image-hoverColor"></div>
+              <p class="card-image-hoverParagraph">
+                Descubre la esencia de los Andes en cada sorbo. Nuestro café de
+                especialidad proveniente de las montañas del Cusco es cultivado
+                a más de 1,800 msnm por productores locales que cuidan cada
+                detalle del proceso.
+              </p>
+            </div>
+            <div
+              class="flex flex-col h-40 justify-center items-start p-3 gap-1.5 font-grotesque-mono"
+            >
+              <h3 class="text-sm uppercase font-semibold">
+                Introducción al Café de Especialidad
+              </h3>
+              <p class="text-sm font-medium">$70.00</p>
+            </div>
+          </div>
+          <!-- BARISTA I -->
+          <div
+            class="flex flex-col border border-gray-300/50 overflow-hidden rounded-2xl gap-2"
+          >
+            <div class="group card-container">
+              <div class="card-image">
+                <span className="font-display text-7xl">☕</span>
+              </div>
+              <div class="card-image-hoverColor"></div>
+              <p class="card-image-hoverParagraph">
+                Esencial para los amantes y profesionales del café de
+                especialidad. Te permitirá evaluar con precisión los aromas,
+                sabores y la textura de cada taza mediante el método tradicional
+                de cupping.
+              </p>
+            </div>
+            <div
+              class="flex flex-col h-40 justify-center items-start p-3 gap-1.5 font-grotesque-mono"
+            >
+              <h3 class="text-sm uppercase font-semibold">
+                Curso de Barista I
+              </h3>
+              <p class="text-sm font-medium">$250.00</p>
+            </div>
+          </div>
+          <!-- LATTE ART BASICO -->
+          <div
+            class="flex flex-col border border-gray-300/50 overflow-hidden rounded-2xl gap-2"
+          >
+            <div class="group card-container">
+              <div
+                class="absolute aspect-4/3 left-[45%] top-[42%] transitio duration-700 group-hover:scale-110"
+              >
+                <span className="font-display text-7xl">☕</span>
+              </div>
+              <div class="card-image-hoverColor"></div>
+              <p class="card-image-hoverParagraph">
+                Diseñados para lograr extracciones limpias y balanceadas en
+                métodos de goteo manual. Su forma cónica favorece un flujo
+                constante del agua, permitiendo resaltar la acidez brillante,
+                las notas aromáticas y la dulzura natural del café de
+                especialidad.
+              </p>
+            </div>
+            <div
+              class="flex flex-col h-40 justify-center items-start p-3 gap-1.5 font-grotesque-mono"
+            >
+              <h3 class="text-sm uppercase font-semibold">Latte Art Basico</h3>
+              <p class="text-sm font-medium">$50.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Nuestras Cafeterias -->
+      <section id="nuestras-cateferias-section" class="py-20">
+        <div
+          class="w-[90%] bg-amber-700/80 text-white mx-auto flex flex-col gap-1.5 mb-12 py-6"
+        >
+          <h2
+            class="font-grotesque-mono text-4xl text-start font-medium mt-4 px-12"
+          >
+            Nuestras Cafeterías
+          </h2>
+          <div
+            class="flex flex-col lg:flex-row gap-5 h-240 px-12 pb-8 pt-3 lg:h-105"
+          >
+            <!-- Cafeteria 1 -->
+            <div
+              class="group relative flex-1 overflow-hidden rounded-3xl cursor-pointer"
+            >
+              <img
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(.19,1,.22,1)] group-hover:scale-115"
+                src="/assets/cafeteria1.jpg"
+                alt=""
+              />
+              <div
+                class="absolute bottom-8 left-8 text-white translate-y-8 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-sm uppercase tracking-widest">
+                  Calle Principal 123
+                </p>
+                <h3 class="text-3xl font-display font-bold">
+                  Rock Café Barranco
+                </h3>
+              </div>
+            </div>
+            <!-- Cafeteria 2 -->
+            <div
+              class="group relative flex-1 overflow-hidden rounded-3xl cursor-pointer"
+            >
+              <img
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(.19,1,.22,1)] group-hover:scale-115"
+                src="/assets/cafeteria2.jpg"
+                alt=""
+              />
+              <div
+                class="absolute bottom-8 left-8 text-white translate-y-8 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-sm uppercase tracking-widest">
+                  Calle Secundaria 123
+                </p>
+                <h3 class="text-2xl font-display font-semibold">
+                  Rock Café Miraflores
+                </h3>
+              </div>
+            </div>
+            <!-- Cafeteria 3 -->
+            <div
+              class="group relative flex-1 overflow-hidden rounded-3xl cursor-pointer"
+            >
+              <img
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(.19,1,.22,1)] group-hover:scale-115"
+                src="/assets/cafeteria3.jpg"
+                alt=""
+              />
+              <div
+                class="absolute bottom-8 left-8 text-white translate-y-8 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100"
+              >
+                <p class="text-sm uppercase tracking-widest">
+                  Calle Diagonal 123
+                </p>
+                <h3 class="text-2xl font-display font-semibold">
+                  Rock Café San Miguel
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>

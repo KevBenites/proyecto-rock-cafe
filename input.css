@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/2273f1ac7855b12e48cacd5a86c7881c?family=Basis+Grotesque+Medium');
+@import url('https://db.onlinewebfonts.com/c/685846eba2b5b1bc0a6548d693ab8123?family=Basis+Grotesque+Pro+Mono');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Playfair Display', serif;
+  --font-grotesque: 'Basis Grotesque Medium';
+  --font-grotesque-mono: 'Basis Grotesque Pro Mono';
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp var(--duration, 1s) ease forwards;
+}
+
+.btn-todos {
+  @apply bg-[#9a5326] text-white text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white;
+}
+
+.btn-menu {
+  @apply bg-[#EEEBE8] text-[#8c7373] text-sm font-medium rounded-4xl py-2 px-5 cursor-pointer hover:bg-[#9a5326] hover:text-white;
+}
+
+.top-heading {
+  @apply text-[#dc793a] text-sm tracking-[4px] text-center uppercase;
+}
+
+.sub-heading {
+  @apply font-grotesque-mono text-5xl font-bold text-center;
+}
+
+.paragraph-heading {
+  @apply font-grotesque tracking-[0.7px] text-sm text-center uppercase;
+}
+
+.card-container {
+  @apply relative bg-[#ECEAE8]/40 w-full h-full aspect-4/3 overflow-hidden;
+}
+
+.card-image {
+  @apply absolute aspect-4/3 left-[45%] top-[42%] transition duration-700 group-hover:scale-110;
+}
+
+.card-image-hoverColor {
+  @apply absolute inset-0 bg-linear-to-t from-black/70 via-black/35 to-transparent opacity-0 transition duration-500 group-hover:opacity-100;
+}
+
+.card-image-hoverParagraph {
+  @apply absolute bottom-6 left-0 right-0 px-6 text-center text-white text-lg font-semibold font-display translate-y-6 opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:opacity-100;
+}
