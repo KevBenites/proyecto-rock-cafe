@@ -6,7 +6,7 @@ export function Header() {
       <nav
         class="navbar flex flex-col lg:flex-row gap-2.5 lg:gap-0 justify-between items-center"
       >
-        <a href="/pages/home/index.html" class="text-4xl font-grotesque">
+        <a href="/index.html" class="text-4xl font-grotesque">
           Rock Café
         </a>
 

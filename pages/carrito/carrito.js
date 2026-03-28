@@ -213,7 +213,7 @@ function finalizarCompra() {
 
   localStorage.removeItem('user-carrito');
 
-  window.location.href = '/pages/home/index.html';
+  window.location.href = '/index.html';
 }
 
 carritoSection.addEventListener('click', (e) => {
