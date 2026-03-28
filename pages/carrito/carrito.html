@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/output.css" />
+    <title>Proyecto - Carrito - Kevin Benites</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header id="header"></header>
+    <main class="flex-1">
+      <section
+        id="carrito-section"
+        class="w-[80%] mx-auto mt-18 mb-15 flex flex-col lg:flex-row lg:mt-36 lg:gap-6"
+      >
+        <!-- Tabla Mi Carrito -->
+        <!-- <div class="flex-1">
+          <h1 class="mb-6 font-grotesque-mono text-4xl font-bold">
+            Mi Carrito
+          </h1>
+          <table class="border border-[#d3ced2] border-t-3 border-t-[#8c7373]">
+            <thead class="border border-[#d3ced2]">
+              <tr>
+                <th class="py-3 px-5 uppercase text-sm"></th>
+                <th class="py-3 px-5 uppercase text-sm"></th>
+                <th class="py-3 px-5 uppercase text-sm">Producto</th>
+                <th class="py-3 px-5 uppercase text-sm">Precio</th>
+                <th class="py-3 px-5 uppercase text-sm">Cantidad</th>
+                <th class="py-3 px-5 uppercase text-sm">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody class="font-grotesque-mono">
+              <tr>
+                <td class="text-center py-3 px-5">
+                  <p
+                    class="text-gray-400 text-xl hover:text-red-600/50 hover:font-bold cursor-pointer"
+                  >
+                    x
+                  </p>
+                </td>
+                <td class="text-center">
+                  <img
+                    class="w-36 h-48"
+                    src="/assets/Ayacucho-Rock.png"
+                    alt=""
+                  />
+                </td>
+                <td class="text-center py-3 px-5">
+                  <p>Rock Cafe</p>
+                  <p class="text-sm">En grano</p>
+                </td>
+                <td class="text-center py-3 px-5">S/45</td>
+                <td class="text-center py-3 px-5">1</td>
+                <td class="text-center py-3 px-5">S/45</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="w-full border border-[#d3ced2] border-t-3 border-t-[#8c7373]">
+            <tbody class="font-grotesque-mono">
+              <tr>
+                <th class="py-3 px-5 text-start text-gray-400 text-xl hover:text-red-600/50 hover:font-bold cursor-pointer">
+                    x
+                  </th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th class="py-3 pr-5 uppercase text-sm text-gray-600">Producto</th>
+                <td><p>Rock Cafe</p>
+                  <p class="text-sm">En grano</p></td>
+              </tr>
+              <tr>
+                <th class="py-3 pr-5 uppercase text-sm text-gray-600">Precio</th>
+                <td>S/45</tr>
+              </tr>
+              <tr>
+                <th class="py-3 pr-5 uppercase text-sm text-gray-600">Cantidad</th>
+                <td>1</tr>
+              <tr>
+                <th class="py-3 pr-5 uppercase text-sm text-gray-600">Subtotal</th>
+                <td>S/45</tr>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+        <!-- Tabla de Totales -->
+        <!-- <div class="flex-1 mt-10 lg:mt-0.5">
+          <h2 class="mb-6 font-grotesque-mono text-2xl font-bold">
+            Total del Carrito
+          </h2>
+          <table class="border border-[#d3ced2] border-t-3 border-t-[#8c7373]">
+            <tbody class="font-grotesque-mono">
+              <tr>
+                <th class="py-3 px-5 uppercase text-sm text-gray-600">
+                  SubTotal
+                </th>
+                <td>S/45</td>
+              </tr>
+              <tr>
+                <th class="py-3 px-5 uppercase text-sm text-gray-600">Envio</th>
+                <td>
+                  <ul>
+                    <li>
+                      <input
+                        type="radio"
+                        id="op1"
+                        name="envio"
+                        value="LM"
+                        checked
+                      />
+                      <label for="op1">Envío a Lima Metropolitana</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="op2" name="envio" value="P" />
+                      <label for="op2">Envío a Provincia</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="op3" name="envio" value="L" />
+                      <label for="op3">Recojo en Local</label>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th class="py-3 px-5 uppercase text-sm text-gray-600">Total</th>
+                <td>S/45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+  <script type="module" src="./carrito.js"></script>
+</html>
