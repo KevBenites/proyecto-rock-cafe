@@ -94,7 +94,7 @@ function eventButtonAction(btnAction) {
                 }</p>
               </div>
               <a
-                href="/producto.html?id=${producto.id}"
+                href="/pages/producto/producto.html?id=${producto.id}"
                 class="text-xs text-center text-emerald-800 font-semibold border border-emerald-800 rounded-4xl px-4 py-2 transition duration-400 ease-out hover:bg-emerald-800 hover:text-white hover:scale-105"
               >
                 ${producto.categoria === 'cafe' ? 'Escoge una Opción' : 'Añadir al Carrito'}
